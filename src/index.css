@@ -1,0 +1,129 @@
+@import 'tailwindcss';
+
+@font-face{
+  font-family: Inconsolata;
+  src: url("./assets/fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+@font-face{
+  font-family: Manufacturing Consent;
+  src: url("./assets/fonts/ManufacturingConsent/ManufacturingConsent-Regular.ttf");
+}
+@font-face{
+  font-family: Macondo;
+  src: url("./assets/fonts/Macondo-Regular.ttf");
+}
+@font-face{
+  font-family: Monserrat Alternates;
+  src: url("./assets/fonts/MonserratAlternates/MontserratAlternates-Regular.ttf");
+}
+@font-face{
+  font-family: Faculty Glyphic;
+  src: url("./assets/fonts/FacultyGlyphic-Regular.ttf");
+}
+@font-face{
+  font-family: Libertinus Mono;
+  src: url("./assets/fonts/LibertinusMono-Regular.ttf");
+}
+@font-face{
+  font-family: Fira Code;
+  src: url("./assets/fonts/FiraCode-VariableFont_wght.ttf");
+}
+
+@theme{
+  --font-inconsolata: Inconsolata, 'mono';
+  --font-manufacturing: Manufacturing Consent, 'sans';
+  --font-libertinus: Libertinus Mono, 'sans';
+  --font-macondo: Macondo, 'sans-serif';
+  --font-montserrat-alt: Monserrat Alternates, 'sans';
+  --font-faculty-glyphic: Faculty Glyphic, 'sans-serif';
+  --font-fira-code: Fira Code, 'mono';
+}
+
+.navlink {
+  @apply font-inconsolata text-sm lg:text-xl transition duration-200 hover:scale-105;
+}
+.buttonHover{
+  transition: all .5s ease-in-out;
+}
+.buttonHover:hover{
+  box-shadow: 0 0 30px #f01cff;
+  background-color: #f01cff;
+  color: white;  
+}
+.buttonHover::after{
+  position: absolute;
+  content: '';
+  color: white;
+}
+
+.iconHover{
+  transform: rotate(360deg);
+  transition: all .3s ease;
+}
+.iconHover:hover{  
+  filter: drop-shadow(0 0 1px skyblue);
+  animation: 3s ease forwards rotateIn;
+}
+@keyframes rotateIn{
+ from{
+    transform: rotate(0);
+ }
+ to{
+    transform: rotate(360deg);
+ }
+}
+
+:root {
+  font-family: 'Microsoft JhengHei UI',system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;  
+  cursor: none;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: white;
+  cursor: none;
+  /* background-image: url('/src/assets/itachi.jpg');
+  background-size: cover; */
+}
+a {
+  font-weight: 500;
+  cursor: none;
+  /* color: #646cef; */
+  color: #c46cff;
+  text-decoration: inherit;
+}
+a:hover {
+  /* color: #535bf2; */
+  color: #f46cff;
+}
+a:active{
+  color: skyblue;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

@@ -1,0 +1,35 @@
+.cursor-follower {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(79, 70, 229); /* Un color azul violeta */
+  border-radius: 50%;
+  pointer-events: none; /* Crucial: no interfiere con clics */
+  transform: translate(-50%, -50%); /* Centra el círculo en el cursor */
+  transition:
+    transform 0.15s ease-out, /* Transición para el movimiento suave */
+    width 0.2s ease-out,
+    height 0.2s ease-out,
+    background-color 0.2s ease-out; /* Transición para el cambio de tamaño y color */
+  z-index: 9999; /* Asegura que esté por encima de todo */
+  opacity: 0.8;
+}
+
+.cursor-follower.interactive-hover {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(239, 68, 68); /* Rojo cuando está interactuando */
+  opacity: 1;
+  border: 1px solid white; /* Borde blanco cuando interactúa */
+}
+/* Nueva clase para el efecto de clic */
+.cursor-follower.clicking {
+  background-color: #8A16C1; /* El color deseado al hacer clic */
+  transform: translate(-50%, -50%) scale(0.8); /* Opcional: un pequeño encogimiento al hacer clic */
+  border: 1px solid white; /* Borde blanco cuando interactúa */
+}
+.cursor-follower.hidden {
+  opacity: 0; /* Lo hacemos invisible */
+  /* Opcional: podrías usar display: none; si no quieres una transición de desvanecimiento,
+     pero la opacidad es más suave. */
+}
