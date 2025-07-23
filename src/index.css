@@ -40,7 +40,7 @@
 }
 
 .navlink {
-  @apply font-inconsolata text-sm lg:text-xl transition duration-200 hover:scale-105;
+  @apply font-inconsolata md:text-xl transition duration-200 hover:scale-105;
 }
 .buttonHover{
   transition: all .5s ease-in-out;

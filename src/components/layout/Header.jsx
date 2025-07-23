@@ -1,12 +1,15 @@
 export default function Header(){
     return (
         <header role="NavBar" 
-        className="w-screen h-20 fixed flex justify-between items-center text-white py-6 px-10 lg:px-30">      
+        className="absolute w-screen h-20 flex flex-col gap-1 py-2 px-5 items-center
+        md:flex-row md:justify-between md:px-20
+        lg:flex-row lg:justify-between lg:px-40">
             <h2 data-interactive="true" 
-                className="text-md lg:text-2xl font-montserrat-alt text-pink-500">
-                    Roy Nadiel A<span className="text-sky-400 text-3xl">.</span>
+                className="text-xl font-montserrat-alt text-pink-500
+                md:text-3xl">
+                Roy Nadiel A<span className="text-sky-400 text-3xl">.</span>
             </h2>
-            <nav className="flex gap-5">
+            <nav className="inline-flex justify-center gap-3 flex-wrap md:gap-8 md:flex-nowrap">
                 <a data-interactive="true" className='navlink' href="#">Home</a>
                 <a data-interactive="true" className="navlink" href="#">Projects</a>                    
                 <a data-interactive="true" className="navlink" href="#">Skills</a>
