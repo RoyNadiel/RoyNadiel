@@ -28,6 +28,10 @@
   font-family: Fira Code;
   src: url("./assets/fonts/FiraCode-VariableFont_wght.ttf");
 }
+@font-face{
+  font-family: League Spartan;
+  src: url("./assets/fonts/LeagueSpartan/LeagueSpartan-Regular.ttf")
+}
 
 @theme{
   --font-inconsolata: Inconsolata, 'mono';
@@ -37,32 +41,52 @@
   --font-montserrat-alt: Monserrat Alternates, 'sans';
   --font-faculty-glyphic: Faculty Glyphic, 'sans-serif';
   --font-fira-code: Fira Code, 'mono';
+  --font-league-spartan: League Spartan, 'serif';
 }
 
 .navlink {
-  @apply font-inconsolata md:text-xl transition duration-200 hover:scale-105;
+  @apply text-pink-500 font-inconsolata md:text-xl transition duration-200 hover:scale-105 tracking-widest;
 }
-.buttonHover{
-  transition: all .5s ease-in-out;
+.hireMeButtonAnimation{
+  transition: all 0.5s ease-in-out;
 }
-.buttonHover:hover{
-  box-shadow: 0 0 30px #f01cff;
+.hireMeButtonAnimation:hover{
+  box-shadow: 0 0 40px #f01cff;
   background-color: #f01cff;
-  color: white;  
-}
-.buttonHover::after{
-  position: absolute;
-  content: '';
   color: white;
+  transform: scale(1.1);
 }
 
-.iconHover{
+.iconViteAnimation:hover{
+  animation: iconViteAnimation .5s forwards ease-in-out;
+}
+@keyframes iconViteAnimation{
+  from{
+    transform: translateY(-5px);
+  }
+  50%{
+    transform: translateY(5px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+.iconReactHover{
   transform: rotate(360deg);
   transition: all .3s ease;
 }
-.iconHover:hover{  
+.iconReactHover:hover{  
   filter: drop-shadow(0 0 1px skyblue);
   animation: 3s ease forwards rotateIn;
+}
+@media(width >= 48rem){
+.scaleSmoothly{
+  transition: transform .5s ease;
+}
+.scaleSmoothly:hover{
+  transition: transform .5s ease;
+  transform: scale(1.1);
+} 
 }
 @keyframes rotateIn{
  from{
@@ -73,11 +97,17 @@
  }
 }
 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FF6467; }
+}
+
 :root {
   font-family: 'Microsoft JhengHei UI',system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;  
   cursor: none;
+  scroll-behavior: smooth;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -91,39 +121,21 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: white;
+  color: white;
   cursor: none;
+  background-color: #222222;
+  box-sizing: border-box;
   /* background-image: url('/src/assets/itachi.jpg');
   background-size: cover; */
 }
-a {
-  font-weight: 500;
+*{
   cursor: none;
-  /* color: #646cef; */
-  color: #c46cff;
-  text-decoration: inherit;
-}
-a:hover {
-  /* color: #535bf2; */
-  color: #f46cff;
-}
-a:active{
-  color: skyblue;
-}
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: indigo;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+} */

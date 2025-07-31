@@ -76,7 +76,8 @@ const CursorFollower = () => {
       className={`cursor-follower 
         ${isHoveringInteractive ? 'interactive-hover' : ''} 
         ${isClicking ? 'clicking' : ''}
-        ${!isVisible ? 'hidden' : ''} `} 
+        ${!isVisible ? 'hidden' : ''} 
+        `} 
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     >
     </div>

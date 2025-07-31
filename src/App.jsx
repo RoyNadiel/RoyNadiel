@@ -1,12 +1,21 @@
 import CursorFollower from './components/CursorFollower.jsx';
-import Home from './components/Home.jsx';
+import Header from './components/layout/Header.jsx';
+import SocialBar from './components/layout/SocialBar';
+import Hero from './components/layout/Hero';
+import Projects from './components/layout/Projects';
+import AboutMe from './components/layout/AboutMe';
+
 
 function App() {
 
   return (
     <>
-    <Home></Home>    
-    <CursorFollower/>
+     <Header/>
+     <SocialBar/>
+     <Hero/>
+     <Projects/>
+     <AboutMe/>
+     <CursorFollower/>
     </>
   )
 }
