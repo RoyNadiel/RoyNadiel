@@ -73,8 +73,8 @@ const CursorFollower = () => {
 
   return (
     <div
-      className={`cursor-follower 
-        ${isHoveringInteractive ? 'interactive-hover' : ''} 
+      className={`cursor-follower
+        ${isHoveringInteractive ? 'interactive-hover' : ''}
         ${isClicking ? 'clicking' : ''}
         ${!isVisible ? 'hidden' : ''} 
         `} 

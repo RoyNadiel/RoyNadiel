@@ -1,5 +1,6 @@
 .polygon{
   /* background: #f01cff; */
+  position: relative;
   clip-path: polygon(
     50% 0%,
     90% 50%,

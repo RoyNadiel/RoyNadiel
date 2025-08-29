@@ -2,46 +2,39 @@
 
 @font-face{
   font-family: Inconsolata;
-  src: url("./assets/fonts/Inconsolata/Inconsolata-Regular.ttf");
-}
-@font-face{
-  font-family: Manufacturing Consent;
-  src: url("./assets/fonts/ManufacturingConsent/ManufacturingConsent-Regular.ttf");
-}
-@font-face{
-  font-family: Macondo;
-  src: url("./assets/fonts/Macondo-Regular.ttf");
+  src: url("./assets/fonts/Inconsolata-Regular.woff2");
+  display: swap;  
 }
 @font-face{
   font-family: Monserrat Alternates;
-  src: url("./assets/fonts/MonserratAlternates/MontserratAlternates-Regular.ttf");
-}
-@font-face{
-  font-family: Faculty Glyphic;
-  src: url("./assets/fonts/FacultyGlyphic-Regular.ttf");
+  src: url("./assets/fonts/MontserratAlternates-Regular.woff2");
+  display: swap;
 }
 @font-face{
   font-family: Libertinus Mono;
-  src: url("./assets/fonts/LibertinusMono-Regular.ttf");
+  src: url("./assets/fonts/LibertinusMono-Regular.woff2");
+  display: swap;
 }
 @font-face{
   font-family: Fira Code;
-  src: url("./assets/fonts/FiraCode-VariableFont_wght.ttf");
+  src: url("./assets/fonts/FiraCode-VariableFont_wght.woff2");
+  display: swap;
 }
 @font-face{
   font-family: League Spartan;
-  src: url("./assets/fonts/LeagueSpartan/LeagueSpartan-Regular.ttf")
+  src: url("./assets/fonts/LeagueSpartan-Regular.woff2");
+  display: swap;
 }
 
 @theme{
+        /* FUENTES */
   --font-inconsolata: Inconsolata, 'mono';
-  --font-manufacturing: Manufacturing Consent, 'sans';
   --font-libertinus: Libertinus Mono, 'sans';
-  --font-macondo: Macondo, 'sans-serif';
   --font-montserrat-alt: Monserrat Alternates, 'sans';
-  --font-faculty-glyphic: Faculty Glyphic, 'sans-serif';
   --font-fira-code: Fira Code, 'mono';
   --font-league-spartan: League Spartan, 'serif';
+        /* BREAKPOINTS */
+  --breakpoint-max-width: 1600px;        
 }
 
 .navlink {
@@ -102,11 +95,18 @@
   50% { border-color: #FF6467; }
 }
 
+.skillsImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
 :root {
   font-family: 'Microsoft JhengHei UI',system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;  
-  cursor: none;
+  font-weight: 400;    
   scroll-behavior: smooth;
 
   color-scheme: light dark;
@@ -122,15 +122,9 @@ body {
   margin: 0;
   min-height: 100vh;
   color: white;
-  cursor: none;
-  background-color: #222222;
   box-sizing: border-box;
-  /* background-image: url('/src/assets/itachi.jpg');
-  background-size: cover; */
-}
-*{
-  cursor: none;
-  box-sizing: border-box;
+  background-size: cover;
+  background: linear-gradient(to top right, #1E1A4D,#3C0366,#1E1A4D);
 }
 
 /* @media (prefers-color-scheme: light) {

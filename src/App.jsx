@@ -1,5 +1,5 @@
-import CursorFollower from './components/CursorFollower.jsx';
-import Header from './components/layout/Header.jsx';
+import Layout from './Layout';
+import Header from './components/layout/Header';
 import SocialBar from './components/layout/SocialBar';
 import Hero from './components/layout/Hero';
 import Projects from './components/layout/Projects';
@@ -10,12 +10,13 @@ function App() {
 
   return (
     <>
-     <Header/>
-     <SocialBar/>
-     <Hero/>
-     <Projects/>
-     <AboutMe/>
-     <CursorFollower/>
+     <Layout>
+      <Header/>
+      <SocialBar/>
+      <Hero/>
+      <Projects/>
+      <AboutMe/>
+     </Layout>
     </>
   )
 }

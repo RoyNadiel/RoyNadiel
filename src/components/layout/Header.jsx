@@ -4,19 +4,20 @@ export default function Header(){
     }
 
     return (
-        <header role="NavBar" 
-        className="absolute w-screen h-20 flex flex-col gap-1 py-2 px-5 items-center
-        md:flex-row md:justify-between md:px-20
-        lg:flex-row lg:justify-between lg:px-40">
+        <header role="Barra de Navegacion"
+        className="fixed w-full h-20 flex flex-col gap-1 py-2 px-4 items-center z-10 backdrop-blur-xs
+        md:flex-row md:justify-between md:px-15
+        lg:flex-row lg:justify-between xl:px-40">
+
             <h1 onClick={handleReloadClick} data-interactive="true"
                 className="text-xl font-montserrat-alt text-pink-500
-                md:text-3xl">
+                lg:text-2xl xl:text-3xl">
                 ROY NADIEL A<span className="text-sky-400 text-3xl">.</span>
             </h1>
             <nav className="inline-flex justify-center gap-3 flex-wrap md:gap-8 md:flex-nowrap" data-interactive="true">
-                <a data-interactive="true" className='navlink' href="#Inicio">INICIO</a>
-                <a data-interactive="true" className="navlink" href="#Proyectos">PROYECTOS</a>                    
-                <a data-interactive="true" className="navlink" href="#Sobre Mi">SOBRE MÍ</a>
+                <a aria-label="Inicio de Pagina" data-interactive="true" className='navlink' href="#Hero">INICIO</a>
+                <a aria-label="Proyectos" data-interactive="true" className="navlink" href="#Proyectos">PROYECTOS</a>                    
+                <a aria-label="Sobre Mi" data-interactive="true" className="navlink" href="#Sobre Mi">SOBRE MÍ</a>
             </nav>                                  
             <div className="items-center gap-5 hidden lg:flex">
                 <a href="https://vite.dev/" target="_blank" className="p-5 iconViteAnimation" data-interactive="true">
