@@ -26,6 +26,6 @@
 ### <div align="center">✨ How to reach me! ✨</div>
 <div align="center">
 
- ![Mi Portfolio](https://img.shields.io/badge/Portfolio%20Web-6E4ABF?style=for-the-badge&logo=About.me&logoColor=white)(https://roynadiel.github.io/Portfolio)
+ [![Mi Portfolio](https://img.shields.io/badge/Portfolio%20Web-6E4ABF?style=for-the-badge&logo=About.me&logoColor=white)](https://roynadiel.github.io/Portfolio)
   
 </div>
