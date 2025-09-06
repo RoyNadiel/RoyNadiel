@@ -15,10 +15,10 @@ Here are some ideas to get you started:
 
 # and of course, I Love JavaScript ❤️.
 
-I would learn everything i could learn if i were immortal.
-And i'm not just talking about Programming things;
+I would learn everything i could learn if i were immortal. And i'm not just talking about Programming things;  
 *I like to learn a little bit of everything.*
 
-#Skills:
+# Skills:
 
-- ![JavaScript] (https://img.shields.io/badge/logo-javascript-blue?logo=javascript)
+![JavaScript](https://img.shields.io/badge/logo-javascript-blue?logo=javascript)
+
