@@ -23,7 +23,8 @@ export default function Card( {name, src, description, skills, skillUsed, imageW
             <article className="w-80 h-130 pt-20 pb-6 px-8 flex flex-col items-center justify-between gap-2 bg-indigo-900 shape            
             xl:w-95">
                 <div className='w-fit h-fit border-2 rounded-lg border-indigo-500 p-0.5'>
-                    <video autoPlay loop muted src={src} alt={name} className={`max-w-${imageWidth} object-cover 2xl:max-w-${imageWidth + 20}`} width={imageWidth + 20} />
+                    <video autoPlay loop muted src={src} alt={name}
+                     className={`max-w-${imageWidth} object-contain 2xl:max-w-${imageWidth + 20}`} width={imageWidth + 20} />
                 </div>
 
                 <p className="text-gray-300 text-xl font-league-spartan text-balance">{description}</p>
