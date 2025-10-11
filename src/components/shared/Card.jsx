@@ -1,6 +1,10 @@
 import './Shapes.css';
 
+<<<<<<< HEAD
 export default function Card( {name, src, description, skills, skillUsed, imageWidth, projectUrl, onMouseEnter, onMouseLeave }) {
+=======
+export default function Card({name, src, description, skills, skillUsed, videoWidth, projectUrl, onMouseEnter, onMouseLeave }) {
+>>>>>>> 068a6b2 (feat: se añadió el CV a proyectos. Styles: se actualizó el mp4 del WrittingJS.)
     return(
         <article className="relative w-fit h-fit scaleSmoothly">
             <a href={projectUrl} target='_blank'>
@@ -20,6 +24,7 @@ export default function Card( {name, src, description, skills, skillUsed, imageW
                 {skillUsed}
             </p>
             
+<<<<<<< HEAD
             <article className="w-80 h-130 pt-20 pb-6 px-8 flex flex-col items-center justify-between gap-2 bg-indigo-900 shape            
             xl:w-95">
                 <div className='w-fit h-fit border-2 rounded-lg border-indigo-500 p-0.5'>
@@ -28,6 +33,16 @@ export default function Card( {name, src, description, skills, skillUsed, imageW
                 </div>
 
                 <p className="text-gray-300 text-xl font-league-spartan text-balance">{description}</p>
+=======
+            <article className="w-80 h-125 pt-20 pb-6 px-8 flex flex-col items-center justify-between gap-2 bg-indigo-900 shape            
+            xl:w-95">
+                <div className='w-fit h-fit border-2 rounded-lg border-indigo-500 p-0.5'>
+                    <video autoPlay loop muted src={src} alt={name}
+                     className={`max-w-${videoWidth} object-contain 2xl:max-w-${videoWidth + 20}`} width={videoWidth + 20} />
+                </div>
+
+                <p className="text-gray-300 text-center text-xl font-league-spartan text-balance">{description}</p>
+>>>>>>> 068a6b2 (feat: se añadió el CV a proyectos. Styles: se actualizó el mp4 del WrittingJS.)
 
                 <div className='w-full max-h-fit flex justify-center items-center'>
                     <ul className="inline-flex flex-wrap items-center justify-center gap-2">
