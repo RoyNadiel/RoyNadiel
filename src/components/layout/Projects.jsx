@@ -27,6 +27,17 @@ export default function Projects() {
     },
     {
       id: 3,
+      name: 'Island Store',
+      src: './projects/IslandStore.mp4',
+      description:
+        'Un ecommerce para la venta de productos, basados en categoría.',
+      skills: ['NextJS', 'TypeScript', 'TailwindCSS', 'Api Rest', 'SSR'],
+      skillUsed: 'TS',
+      imageWidth: '80',
+      projectUrl: 'https://github.com/RoyNadiel/ECommerce',
+    },
+    {
+      id: 4,
       name: 'Writer',
       src: './projects/Writer.mp4',
       description:
@@ -35,17 +46,6 @@ export default function Projects() {
       skillUsed: 'C#',
       imageWidth: '80',
       projectUrl: 'https://github.com/RoyNadiel/Notes',
-    },
-    {
-      id: 4,
-      name: 'Ecommerce',
-      src: './projects/Ecommerce.mp4',
-      description:
-        'Un ecommerce para la venta de productos, basados en categoría.',
-      skills: ['NextJS', 'TypeScript', 'TailwindCSS', 'Sqlite', 'Api Rest'],
-      skillUsed: 'TS',
-      imageWidth: '80',
-      projectUrl: 'https://github.com/RoyNadiel/ECommerce',
     },
     {
       id: 5,
